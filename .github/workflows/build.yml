@@ -17,7 +17,7 @@ jobs:
       - name: "hazan"
         uses: "actions/setup-node@56337c425554a6be30cdef71bf441f15be286854" # tag=v3.1.1 
       - name: "checkout repository"
-        uses: "actions/checkout@v2" # comment after
+        uses: "actions/checkout@v3" # comment after
       - name: "quoted, no comment, outdated"
         uses: "actions/setup-java@v2"
         with:
