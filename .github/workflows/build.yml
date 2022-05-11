@@ -15,9 +15,9 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "test"
-        uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
+        uses: actions/setup-node@b067f78ed37e8b6503efbf8c2b320b7f1e48369a
       - name: "test2"
-        uses: 'actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561' # tag=v3.1.1
+        uses: 'actions/setup-node@56337c425554a6be30cdef71bf441f15be286854' # tag=v3.1.1
       - name: "hazan"
         uses: "actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561" # tag=v2.5.1 
       - name: "checkout repository"
