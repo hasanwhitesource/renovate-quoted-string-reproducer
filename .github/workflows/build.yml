@@ -14,12 +14,8 @@ jobs:
     if: "${{ github.event_name != 'pull_request' || github.repository != github.event.pull_request.head.repo.full_name }}"
     runs-on: "ubuntu-latest"
     steps:
-      - name: "test"
-        uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
-      - name: "test2"
-        uses: 'actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561' # tag=v3.1.1
       - name: "hazan"
-        uses: "actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561" # tag=v2.5.1 
+        uses: actions/setup-node@1f8c6b94b26d0feae1e387ca63ccbdc44d27b561 # tag=v2.5.1 
       - name: "checkout repository"
         uses: "actions/checkout@v2" # comment after
       - name: "quoted, no comment, outdated"
